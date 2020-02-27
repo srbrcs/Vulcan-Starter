@@ -10,7 +10,7 @@ RUN chown 1001:0 /opt/src; ls -lah
 
 # Install 'meteor'
 RUN curl https://install.meteor.com/ | bash
-USER 1001
+
 
 
 
