@@ -8,13 +8,13 @@ WORKDIR /opt/src
 
 RUN ls -lah
 
-
+USER 0
 # Install 'meteor'
 RUN curl https://install.meteor.com/ | bash
 
 
 
-#USER 1001
+USER 1001
 COPY . .
 # USER 0
 # Sanity check your Meteor installation
