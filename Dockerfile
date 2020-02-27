@@ -17,8 +17,7 @@ RUN curl https://install.meteor.com/ | bash
 USER 1001
 COPY . .
 USER 0
-RUN ls -lah .meteor
-RUN chmod 0774 /opt/src/.meteor/meteor
+RUN ls -lah 
 
 USER 1001
 # Sanity check your Meteor installation
