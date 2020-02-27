@@ -12,7 +12,7 @@ USER 0
 # Install 'meteor'
 RUN curl https://install.meteor.com/ | bash
 
-
+RUN chmod 0774 /opt/src/.meteor/meteor
 
 USER 1001
 
