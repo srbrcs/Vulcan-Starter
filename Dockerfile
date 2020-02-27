@@ -5,12 +5,14 @@ USER 1001
 
 
 WORKDIR /opt/src
+
+USER 0
 RUN chown 1001:0 /opt/src;  ls -lah
 
-
+USER 1001
 
 # Install 'meteor'
-RUN curl https://install.meteor.com/ | sh
+RUN curl https://install.meteor.com/ | bash
 
 COPY . .
 
