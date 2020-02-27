@@ -7,7 +7,7 @@ USER 1001
 WORKDIR /opt/src
 
 USER 0
-RUN chown 1001:0 /opt/src;  ls -lah
+RUN chown 1001:0 /opt/src; export HOME=/opt/src; ls -lah
 
 
 # Install 'meteor'
