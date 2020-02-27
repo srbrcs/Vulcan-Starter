@@ -1,4 +1,4 @@
-FROM srbrcs/vjs:dev
+FROM srbrcs/vjs:latest
 
 COPY . .
 USER 0
