@@ -17,7 +17,7 @@ RUN curl https://install.meteor.com/ | bash
 USER 1001
 COPY . .
 USER 0
-RUN ls -lah 
+RUN ls -lah ; chown -R 1001:0 .; ls -lah
 
 USER 1001
 # Sanity check your Meteor installation
