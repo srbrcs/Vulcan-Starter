@@ -1,10 +1,10 @@
 FROM node:8.15.1
 
 
-RUN useradd -rm -d /opt/src -s /bin/bash -g root -G sudo -u 1001 nodeapp
+RUN useradd -rm -d /home/nodeapp -s /bin/bash -g root -G sudo -u 1001 nodeapp
 USER nodeapp
 
-WORKDIR /opt/src
+WORKDIR /home/nodeapp/src
 
 RUN ls -lah
 
