@@ -33,3 +33,5 @@ accounts-password@1.5.2
 
 #getting-started
 stateofjs
+vulcan:events-internal
+vulcan:errors-sentry
