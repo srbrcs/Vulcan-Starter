@@ -1,0 +1,80 @@
+.survey-section {
+  // .form-control {
+  //   background: $bg-color-lightest;
+  // }
+  .form-group {
+    margin-bottom: $spacing;
+    @include border;
+    padding: $spacing;
+  }
+  .form-label {
+    font-size: $larger-font;
+    @include font-bold;
+  }
+  .form-check {
+    display: flex;
+    align-items: center;
+    padding: 0 $spacing/2;
+    &:last-of-type {
+      margin: 0;
+    }
+    &:hover {
+      background: $bg-color-light;
+    }
+  }
+  .form-component-radiogroup{
+    .form-check-checked {
+    }
+    .form-check-unchecked {
+      opacity: 0.3;
+    }
+  }
+  .form-check-input {
+    margin: 0px $spacing/1.5 0 0;
+    position: relative;
+    top: -3px;
+    display: block;
+  }
+  .form-check-label {
+    flex: 1;
+    padding: $spacing/2 0;
+  }
+  .form-item-contents {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-item-input {
+    order: 2;
+  }
+  .form-text {
+    background: $bg-color-light;
+    padding: $spacing/2;
+    order: 1;
+    margin-bottom: $spacing/2;
+  }
+  .form-submit-actions {
+    display: flex;
+    justify-content: space-between;
+    .prev-placeholder,
+    button {
+      @include small-medium {
+        flex-basis: 49%;
+      }
+      @include large {
+        flex-basis: 35%;
+      }
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    div:first-child,
+    button:first-child {
+      // margin-right: $spacing;
+    }
+  }
+
+  .form-submit-help {
+    margin-top: $spacing;
+    text-align: center;
+    font-size: $small-font;
+  }
+}

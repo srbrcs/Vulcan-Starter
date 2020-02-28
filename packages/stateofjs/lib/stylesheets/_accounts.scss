@@ -1,0 +1,35 @@
+.accounts-ui{
+  .fields{
+    .field{
+      margin-bottom: $spacing;
+    }
+  }
+  .buttons{
+    .btn-primary{
+      width: 100%;
+      margin-bottom: $spacing/2;
+    }
+    a{
+      display: block;
+      text-align: center;
+      margin-bottom: $spacing/2;
+      font-size: $smallish-font;
+    }
+  }
+  .warning{
+    display: block;
+  }
+}
+
+.account-message{
+  margin-top: $spacing*2;
+  h4{
+    font-size: $large-font;
+  }
+  p, li{
+    font-size: $smallish-font;
+  }
+  ul:last-child, p:last-child{
+    margin-bottom: 0;
+  }
+}

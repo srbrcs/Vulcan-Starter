@@ -1,0 +1,160 @@
+.surveys-title{
+  text-align: center;
+  margin-bottom: $spacing;
+}
+.account,
+.contents-narrow {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.surveys{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.survey-item{
+}
+.survey-item-contents {
+  @include small {
+    text-align: center;
+  }
+  @include medium-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  margin-bottom: $spacing;
+}
+.survey-image{
+  max-width: 180px;
+  @include small{
+    margin: 0 auto $spacing/2 auto;
+  }
+  @include medium-large{
+    margin-right: $spacing;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.survey-name {
+  @include small {
+    margin-bottom: $spacing/2;
+  }
+  font-size: $large-font;
+  margin: 0;
+}
+.survey-actions {
+  flex-basis: 200px;
+}
+.survey-action {
+  flex: 1;
+  margin-left: $spacing;
+}
+.survey-action-closed{
+  background: $bg-color-light;
+  padding: $spacing/2;
+  text-align: center;
+}
+.survey-item-error {
+}
+// Survey Section
+.survey-section {
+  @include large {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: $spacing * 2;
+  }
+}
+.section-contents {
+}
+.section-nav {
+  // background: $bg-color-light;
+  // padding: $spacing;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  a {
+    @include font-regular;
+    white-space: nowrap;
+  }
+  .active {
+    @include font-bold;
+    color: $contrast-color;
+  }
+  li {
+    font-size: $medium-font;
+    margin-bottom: $spacing/4;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.section-nav-head {
+  @include small-medium {
+    @include flex-center;
+    margin-bottom: $spacing;
+  }
+  @include large {
+    margin-bottom: $spacing/2;
+  }
+}
+.section-nav-toggle {
+  margin-left: $spacing/2;
+  color: $text-color;
+  font-size: $medium-font;
+  @include large {
+    display: none;
+  }
+}
+.section-nav-hidden {
+  .section-nav-contents {
+    @include small-medium {
+      display: none;
+    }
+  }
+}
+.section-nav-inner {
+}
+.section-nav-heading {
+  font-size: $medium-font;
+  margin: 0;
+}
+.completion-message {
+  font-size: $small-font;
+  margin-top: $spacing;
+  color: $text-color-dark;
+}
+.section-nav-item-completion {
+  @include font-regular;
+  color: $text-color;
+}
+.section-questions {
+  max-width: 800px;
+  margin: 0 auto;
+  .form-component-clear {
+    display: none;
+  }
+}
+.survey-closed{
+  background: $redLighter;
+  padding: $spacing;
+  color: $text-color-inverted;
+  margin-bottom: $spacing;
+}
+.form-section-nav {
+  &-top {
+    margin-bottom: $spacing;
+  }
+}
+.section-title {
+  font-size: $largest-font;
+  margin-bottom: $spacing/2;
+}
+.section-description {
+  font-size: $large-font;
+  @include font-regular;
+  color: $text-color-dark;
+  margin-bottom: $spacing;
+}
